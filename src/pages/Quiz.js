@@ -5,7 +5,7 @@ import QuizFooter from "../components/QuizFooter";
 import QuizHeader from "../components/QuizHeader";
 import ScoreCount from "../components/ScoreCount";
 import data from "../json/data";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { secondsToMin } from "../utils";
 import QuizTimer from "../components/QuizTimer";
 import Progress from "../components/Progress";
@@ -16,7 +16,7 @@ const Quiz = () => {
   const [questionAnswered, setQuestionAnswered] = useState(null);
   const [activeRadio, setActiveRadio] = useState(null);
   const [showResult, setShowResult] = useState(false);
-  const navigate = useNavigate();
+
   const [buttonDisabled, setButtonDisabled] = useState(false)
 
   const [questionCounter, setQuestionCounter] = useState(0);
